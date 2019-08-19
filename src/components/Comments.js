@@ -1,4 +1,7 @@
 import * as React from "react";
+import { connect } from "react-redux";
+
+import { addComment } from "../actions/actions";
 
 class Comments extends React.Component {
   constructor(props) {
@@ -27,6 +30,8 @@ class Comments extends React.Component {
 
     const author = this.authorInput.current.value;
     const comment = this.commentInput.current.value;
+
+    this.props.addComment(postId, author, comment);
   };
 
   render() {
@@ -51,4 +56,18 @@ class Comments extends React.Component {
   }
 }
 
-export default Comments;
+const mapStateToProps = state => {
+  return {
+    comments: state.comments
+  };
+};
+
+const mapDispatchToProps = dispatch => ({
+  addComment: (postId, author, comment) =>
+    dispatch(addComment(postId, author, comment))
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Comments);
