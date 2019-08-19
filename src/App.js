@@ -7,7 +7,7 @@ import Home from "./components/Home";
 
 class App extends React.Component {
   render() {
-    return <Home />;
+    return <Home posts={this.props.posts} />;
   }
 }
 

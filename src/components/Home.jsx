@@ -12,7 +12,7 @@ class Home extends React.Component {
         <h1>
           <Link to="/">Picstagram</Link>
         </h1>
-        <PhotoGrid />
+        <PhotoGrid posts={this.props.posts} />
       </div>
     );
   }
