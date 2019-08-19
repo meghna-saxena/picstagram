@@ -1,13 +1,15 @@
 import * as React from "react";
 
-let commentForm = React.createRef();
-let authorInput = React.createRef();
-let commentInput = React.createRef();
+class Comments extends React.Component {
+  constructor(props) {
+    super(props);
 
-const Comments = props => {
-  const { postComments } = props;
+    this.commentForm = React.createRef();
+    this.authorInput = React.createRef();
+    this.commentInput = React.createRef();
+  }
 
-  const renderComments = (comment, i) => {
+  renderComments = (comment, i) => {
     return (
       <div className="comment" key={i}>
         <p>
@@ -19,26 +21,34 @@ const Comments = props => {
     );
   };
 
-  const handleSubmit = e => {
+  handleSubmit = e => {
     e.preventDefault();
-    const { postId } = props.match.params;
+    const { postId } = this.props.match.params;
 
-    const author = authorInput.current.value;
-    const comment = commentInput.current.value;
+    const author = this.authorInput.current.value;
+    const comment = this.commentInput.current.value;
   };
 
-  return (
-    <div className="comments">
-      {postComments.map((comment, i) => {
-        return renderComments(comment, i);
-      })}
-      <form ref={commentForm} className="comment-form" onSubmit={handleSubmit}>
-        <input type="text" ref={authorInput} placeholder="author" />
-        <input type="text" ref={commentInput} placeholder="comment" />
-        <input type="submit" hidden />
-      </form>
-    </div>
-  );
-};
+  render() {
+    const { postComments } = this.props;
+
+    return (
+      <div className="comments">
+        {postComments.map((comment, i) => {
+          return this.renderComments(comment, i);
+        })}
+        <form
+          ref={this.commentForm}
+          className="comment-form"
+          onSubmit={this.handleSubmit}
+        >
+          <input type="text" ref={this.authorInput} placeholder="author" />
+          <input type="text" ref={this.commentInput} placeholder="comment" />
+          <input type="submit" hidden />
+        </form>
+      </div>
+    );
+  }
+}
 
 export default Comments;
