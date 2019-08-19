@@ -25,7 +25,7 @@ class Comments extends React.Component {
 
   handleRemoveComment = index => {
     const { postId } = this.props.match.params;
-    this.props.removeComment(index, postId);
+    this.props.removeComment(postId, index);
   };
 
   renderComments = (comment, i) => {
@@ -33,7 +33,10 @@ class Comments extends React.Component {
       <div className="comment" key={i}>
         <p>
           <strong>{comment.user}</strong> {comment.text}
-          <button className="remove-comment" onClick={this.handleRemoveComment}>
+          <button
+            className="remove-comment"
+            onClick={() => this.handleRemoveComment(i)}
+          >
             &times;
           </button>
         </p>
