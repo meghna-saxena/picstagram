@@ -67,15 +67,6 @@ a:focus {
   background: white;
 }
 
-/* .grid-figure {
-  box-shadow: none;
-  margin: 0 2rem 0 0;
-  border: 0;
-  padding: 0;
-  flex: 1 0 60%;
-  max-width: 60%;
-} */
-
 .comments {
   flex: 1 0 40%;
   max-width: 40%;
@@ -170,7 +161,7 @@ input, textarea {
 }
 
 button, .button {
-  border: 2px solid lighten(grey, 90%);
+  border: 2px solid lightgrey;
   background: none;
   flex-basis: 48%;
   display: inline-block;
@@ -182,6 +173,7 @@ button, .button {
   color: blue;
   transition: all 0.2s;
   box-sizing: padding-box;
+  margin: 0 2px;
 }
 
 button:hover, .button:hover, button:focus, .button:focus {
@@ -194,8 +186,7 @@ button:hover, .button:hover, button:focus, .button:focus {
 */
 
 .speech-bubble {
-  size: 1.25rem;
-  width: 1.25rem * 1.2rem;
+  width: 1.2rem;
   height: 1.25rem;
   background: blue;
   display: inline-block;
@@ -211,7 +202,11 @@ button:hover, .button:hover, button:focus, .button:focus {
   height: 0;
   border-style: solid;
   border-width: 0 size size 0;
-  border-color: transparent blue transparent transparent;
+  /* border-color: transparent blue transparent transparent; */
   top: 30%;
   left: 0;
+}
+
+figcaption > p {
+  margin: 1rem;
 }

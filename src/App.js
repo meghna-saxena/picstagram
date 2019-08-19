@@ -7,7 +7,9 @@ import Home from "./components/Home";
 
 class App extends React.Component {
   render() {
-    return <Home posts={this.props.posts} />;
+    const { posts, comments } = this.props;
+
+    return <Home posts={posts} comments={comments} />;
   }
 }
 

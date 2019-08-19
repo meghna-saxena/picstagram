@@ -5,17 +5,15 @@ import PhotoGrid from "./PhotoGrid";
 
 import styles from "../styles/main.module.styl";
 
-class Home extends React.Component {
-  render() {
-    return (
-      <div className={styles.heading}>
-        <h1>
-          <Link to="/">Picstagram</Link>
-        </h1>
-        <PhotoGrid posts={this.props.posts} />
-      </div>
-    );
-  }
-}
+const Home = ({ posts, comments }) => {
+  return (
+    <div className={styles.heading}>
+      <h1>
+        <Link to="/">Picstagram</Link>
+      </h1>
+      <PhotoGrid posts={posts} comments={comments} />
+    </div>
+  );
+};
 
 export default Home;
