@@ -5,13 +5,13 @@ import PhotoGrid from "./PhotoGrid";
 
 import styles from "../styles/main.module.styl";
 
-const Home = ({ posts, comments }) => {
+const Home = () => {
   return (
     <div className={styles.heading}>
       <h1>
         <Link to="/">Picstagram</Link>
       </h1>
-      <PhotoGrid posts={posts} comments={comments} />
+      <PhotoGrid />
     </div>
   );
 };
