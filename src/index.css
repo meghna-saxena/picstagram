@@ -22,6 +22,10 @@ h1 {
   text-shadow: 0px 4px 0 rgba(18, 86, 136, 0.11);
 }
 
+h1 > a {
+  color: rgb(255, 162, 0);   
+}
+
 p {
   font-size: 1.6rem;
   line-height: 1.5;
@@ -29,7 +33,6 @@ p {
 
 a {
   text-decoration: none;
-  color: rgb(255, 162, 0);   
 }
 
 a:focus {
@@ -53,6 +56,8 @@ a:focus {
   background: white;
   box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.03);
   position: relative;
+  flex: 1 0 60%;
+  max-width: 300px;
 }
 
 .single-photo {
@@ -62,14 +67,14 @@ a:focus {
   background: white;
 }
 
-.grid-figure {
+/* .grid-figure {
   box-shadow: none;
   margin: 0 2rem 0 0;
   border: 0;
   padding: 0;
   flex: 1 0 60%;
   max-width: 60%;
-}
+} */
 
 .comments {
   flex: 1 0 40%;
