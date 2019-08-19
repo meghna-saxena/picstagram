@@ -1,6 +1,6 @@
 # Picstagram
 
-A simple picture gallery app resembling instagram minimlist-design built using React and Redux.
+A simple picture gallery app resembling instagram minimalist-design built using React and Redux.
 
 ## Features
 
