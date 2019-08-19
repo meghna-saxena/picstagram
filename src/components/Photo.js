@@ -50,16 +50,14 @@ const Photo = props => {
                 posts: props.posts,
                 comments: props.comments
               }
-         
             }}
           >
             <span className="comment-count">
+              <i className="fa fa-comments-o" />
               <span>
-                <i className="fa fa-comments-o">
-                  {comments && comments[post.code]
-                    ? comments[post.code].length
-                    : 0}
-                </i>
+                {comments && comments[post.code]
+                  ? comments[post.code].length
+                  : 0}
               </span>
             </span>
           </Link>

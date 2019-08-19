@@ -17,7 +17,7 @@ class Comments extends React.Component {
       <div className="comment" key={i}>
         <p>
           <strong>{comment.user}</strong>
-          {comment.text}
+           {' '}{comment.text}
           <button className="remove-comment">&times;</button>
         </p>
       </div>
@@ -32,11 +32,15 @@ class Comments extends React.Component {
     const comment = this.commentInput.current.value;
 
     this.props.addComment(postId, author, comment);
+    this.commentForm.current.reset();
   };
 
   render() {
-    const { postComments } = this.props;
+    const { comments } = this.props;
+    const { postId } = this.props.match.params;
 
+    const postComments = comments[postId] || [];
+    // console.log("postComments", postComments);
     return (
       <div className="comments">
         {postComments.map((comment, i) => {

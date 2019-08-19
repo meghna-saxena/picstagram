@@ -11,12 +11,14 @@ export default class SinglePhoto extends React.Component {
     const index = posts.findIndex(post => post.code === postId);
     const post = posts[index];
 
-    const postComments = comments[postId] || [];
+    // const postComments = comments[postId] || [];
+
+    // console.log('comments', comments)
 
     return (
       <div className="single-photo">
         <Photo index={index} post={post} {...this.props} />
-        <Comments postComments={postComments} {...this.props} />
+        <Comments {...this.props} />
       </div>
     );
   }
