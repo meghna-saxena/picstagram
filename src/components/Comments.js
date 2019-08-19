@@ -1,7 +1,7 @@
 import * as React from "react";
 import { connect } from "react-redux";
 
-import { addComment } from "../actions/actions";
+import { addComment, removeComment } from "../actions/actions";
 
 class Comments extends React.Component {
   constructor(props) {
@@ -11,18 +11,6 @@ class Comments extends React.Component {
     this.authorInput = React.createRef();
     this.commentInput = React.createRef();
   }
-
-  renderComments = (comment, i) => {
-    return (
-      <div className="comment" key={i}>
-        <p>
-          <strong>{comment.user}</strong>
-           {' '}{comment.text}
-          <button className="remove-comment">&times;</button>
-        </p>
-      </div>
-    );
-  };
 
   handleSubmit = e => {
     e.preventDefault();
@@ -35,12 +23,30 @@ class Comments extends React.Component {
     this.commentForm.current.reset();
   };
 
+  handleRemoveComment = index => {
+    const { postId } = this.props.match.params;
+    this.props.removeComment(index, postId);
+  };
+
+  renderComments = (comment, i) => {
+    return (
+      <div className="comment" key={i}>
+        <p>
+          <strong>{comment.user}</strong> {comment.text}
+          <button className="remove-comment" onClick={this.handleRemoveComment}>
+            &times;
+          </button>
+        </p>
+      </div>
+    );
+  };
+
   render() {
     const { comments } = this.props;
     const { postId } = this.props.match.params;
 
     const postComments = comments[postId] || [];
-    // console.log("postComments", postComments);
+
     return (
       <div className="comments">
         {postComments.map((comment, i) => {
@@ -68,7 +74,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => ({
   addComment: (postId, author, comment) =>
-    dispatch(addComment(postId, author, comment))
+    dispatch(addComment(postId, author, comment)),
+  removeComment: (index, postId) => dispatch(removeComment(index, postId))
 });
 
 export default connect(

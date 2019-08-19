@@ -8,6 +8,7 @@ class PhotoGrid extends React.Component {
   render() {
     const { posts, comments, increment } = this.props;
 
+    console.log("posts grid", posts);
     return (
       <div className="photo-grid">
         {posts.map((post, i) => (

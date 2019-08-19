@@ -1,16 +1,14 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
 
+import Header from "./Header";
 import PhotoGrid from "./PhotoGrid";
 
-import styles from "../styles/main.module.styl";
+// import styles from "../styles/main.module.styl";
 
 const Home = () => {
   return (
-    <div className={styles.heading}>
-      <h1>
-        <Link to="/">Picstagram</Link>
-      </h1>
+    <div>
+      <Header />
       <PhotoGrid />
     </div>
   );

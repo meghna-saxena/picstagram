@@ -6,15 +6,20 @@ const Photo = props => {
   const { index, increment, post, comments } = props;
 
   const incrementLikesHandler = index => {
-    console.log("PHOTO PROPS", index);
-
     increment(index);
   };
 
   return (
     <figure className="grid-figure">
       <div className="grid-photo-wrap">
-        <Link to={`view/${post.code}`}>
+        <Link
+          to={{
+            pathname: `/view/${post.code}`,
+            state: {
+              posts: props.posts
+            }
+          }}
+        >
           <img
             className="grid-photo"
             src={post.display_src}
@@ -47,8 +52,7 @@ const Photo = props => {
             to={{
               pathname: `/view/${post.code}`,
               state: {
-                posts: props.posts,
-                comments: props.comments
+                posts: props.posts
               }
             }}
           >
