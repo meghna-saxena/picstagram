@@ -490,6 +490,21 @@ module.exports = function(webpackEnv) {
             },
             // ** STOP ** Are you adding a new loader?
             // Make sure to add the new loader(s) before the "file" loader.
+            {
+              test: /\.styl$/,
+              use: [
+                'style-loader',
+                'css-loader?modules&camelCase&localIdentName=[path]__[name]__[local]--[hash:base64:5]',
+                'stylus-loader',
+              ],
+            },
+            {
+              test: /\.css$/,
+              use: [
+                'style-loader',
+                'css-loader',
+              ],
+            },
           ],
         },
       ],
