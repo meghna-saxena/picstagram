@@ -16,7 +16,7 @@ h1 {
   font-family: 'Lobster', cursive;
   text-align: center;
   font-weight: 100;
-  font-size: 13rem;
+  font-size: 12rem;
   margin: 2rem 0;
   letter-spacing: -1px;
   text-shadow: 0px 4px 0 rgba(18, 86, 136, 0.11);
@@ -149,6 +149,24 @@ input, textarea {
   left: 50%;
   top: 50%;
   pointer-events: none;
+}
+
+.likes-enter {
+  opacity: 0.01;
+}
+
+.likes-enter.likes-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.likes-leave {
+  opacity: 1;
+}
+
+.likes-leave.likes-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
 }
 
 /*  

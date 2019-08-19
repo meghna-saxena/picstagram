@@ -45,7 +45,7 @@ class Photo extends React.Component {
             <Link className="button" to={`/view/${post.code}`}>
               <span className="comment-count">
                 <span>
-                  <i class="fa fa-comments-o">
+                  <i className="fa fa-comments-o">
                     {comments[post.code] ? comments[post.code].length : 0}
                   </i>
                 </span>
