@@ -204,6 +204,7 @@ button, .button {
   transition: all 0.2s;
   box-sizing: padding-box;
   margin: 0 2px;
+  cursor: pointer;
 }
 
 button:hover, .button:hover, button:focus, .button:focus {

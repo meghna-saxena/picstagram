@@ -6,14 +6,11 @@ import Comments from "./Comments";
 
 export default class SinglePhoto extends React.Component {
   render() {
-    console.log('PROPSSS', this.props)
     const { posts } = this.props.location.state;
     const { postId } = this.props.match.params;
-
-   
+ 
     const index = posts.findIndex(post => post.code === postId);
     const post = posts[index];
-
     return (
       <React.Fragment>
         <Header />

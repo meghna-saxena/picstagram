@@ -2,13 +2,11 @@ import * as React from "react";
 import { connect } from "react-redux";
 
 import Photo from "./Photo";
-import { increment } from "../actions/actions";
 
 class PhotoGrid extends React.Component {
   render() {
-    const { posts, comments, increment } = this.props;
+    const { posts, comments } = this.props;
 
-    console.log("posts grid", posts);
     return (
       <div className="photo-grid">
         {posts.map((post, i) => (
@@ -17,7 +15,6 @@ class PhotoGrid extends React.Component {
             key={i}
             post={post}
             comments={comments}
-            increment={increment}
             {...this.props}
           />
         ))}
@@ -33,11 +30,4 @@ const mapStateToProps = state => {
   };
 };
 
-const mapDispatchToProps = dispatch => ({
-  increment: index => dispatch(increment(index))
-});
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(PhotoGrid);
+export default connect(mapStateToProps)(PhotoGrid);
