@@ -7,7 +7,7 @@ const comments = {
   ],
   BAcyDyQwcXX: [
     {
-      text: "Wes. WE should have lunch.",
+      text: "Wendy. We should have lunch.",
       user: "jdaveknox"
     },
     {
@@ -16,7 +16,7 @@ const comments = {
     },
     {
       text: "@jdaveknox yes!",
-      user: "wesbos"
+      user: "davidbeckham"
     },
     {
       text: "😍 love Hamilton!",
@@ -38,7 +38,7 @@ const comments = {
       user: "henrihelvetica"
     },
     {
-      text: "@wesbos 👍 my daughter is a pancake eating machine!",
+      text: "@davidbeckham 👍 my daughter is a pancake eating machine!",
       user: "brentoage"
     },
     {
@@ -53,11 +53,11 @@ const comments = {
     {
       text:
         "@gobananna I just made a batch and put in in a FIFO bottle. Keeps in the fridge for a few days.",
-      user: "wesbos"
+      user: "davidbeckham"
     },
     {
       text: "@haaps thanks! It's a Jenn air - so nice to cool with!",
-      user: "wesbos"
+      user: "davidbeckham"
     },
     {
       text:
@@ -68,7 +68,7 @@ const comments = {
   BAF_KY4wcRY: [
     {
       text:
-        "Looking great Wes! I'd like to see the other side of the room too.",
+        "Looking great Wendy! I'd like to see the other side of the room too.",
       user: "axcdnt"
     },
     {
@@ -87,7 +87,7 @@ const comments = {
     {
       text:
         "@axcdnt that is where I put all the junk. I'll have to clean that side too @henrihelvetica no podcast yet! @pmgllc ohh yeah! @alexbaumgertner yep - the main one is 4K - I'm loving it",
-      user: "wesbos"
+      user: "davidbeckham"
     },
     {
       text: "That chrome pillow. 😉",
@@ -95,12 +95,12 @@ const comments = {
     },
     {
       text:
-        "@wesbos is that the Dell 4k? The MacBook Pro powers it well? I also have a Retina™ / x1 setup as well. Very handy.",
+        "@davidbeckham is that the Dell 4k? The MacBook Pro powers it well? I also have a Retina™ / x1 setup as well. Very handy.",
       user: "henrihelvetica"
     },
     {
       text: "#minimalsetups",
-      user: "wesbos"
+      user: "davidbeckham"
     }
   ],
   _4jHytwcUA: [
@@ -148,7 +148,7 @@ const comments = {
     },
     {
       text: "@tjholowaychuk2 haha yes! Old school stylez!",
-      user: "wesbos"
+      user: "davidbeckham"
     }
   ],
   _KnU7MwceA: [],
@@ -203,12 +203,12 @@ const comments = {
   mxKQoQcQh: [],
   hZh6IQcfN: [
     {
-      text: "What do we gotta do to get some :)? @wesbos",
+      text: "What do we gotta do to get some :)? @davidbeckham",
       user: "jonasbad"
     },
     {
       text:
-        "Might drop by today - real quick. Trade you an illegal pin for these? Lol. @wesbos",
+        "Might drop by today - real quick. Trade you an illegal pin for these? Lol. @davidbeckham",
       user: "henrihelvetica"
     },
     {
@@ -217,7 +217,7 @@ const comments = {
     },
     {
       text: "@jonasbad @datamoshr I'll post them up on my blog soon!",
-      user: "wesbos"
+      user: "davidbeckham"
     },
     {
       text: "Want",
@@ -294,7 +294,7 @@ const comments = {
     {
       text:
         "@br11x I did a teespring a few months ago - maybe I'll do another one soon",
-      user: "wesbos"
+      user: "davidbeckham"
     }
   ],
   B3eiIwcYV: [

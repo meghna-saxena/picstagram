@@ -32,16 +32,16 @@ class Photo extends React.Component {
             />
           </Link>
 
-          {/* <CSSTransitionGroup
+          {/*  <CSSTransitionGroup
             transitionName="like"
             transitionEnterTimeout={500}
             transitionLeaveTimeout={500}
           >
-            <span key={post.likes} className="likes-heart">
-              {post.likes}
+            <span key={filteredPost.likes} className="likes-heart">
+              {filteredPost.likes}
             </span>
           </CSSTransitionGroup>
-         */}
+       */}
         </div>
 
         <figcaption>
