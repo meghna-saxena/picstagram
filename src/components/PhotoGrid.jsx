@@ -5,7 +5,7 @@ const PhotoGrid = ({ posts, comments }) => {
   return (
     <div className="photo-grid">
       {posts.map((post, i) => (
-        <Photo key={i} post={post} comments={comments} />
+        <Photo index={i} key={i} post={post} comments={comments} />
       ))}
     </div>
   );
