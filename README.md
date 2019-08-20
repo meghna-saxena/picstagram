@@ -2,17 +2,14 @@
 
 A simple picture gallery app resembling instagram minimalist-design built using React and Redux.
 
-## Running the development server
+## Start the development server
 
-- git clone `git@github.com:meghna-saxena/picstagram.git`
-
-- `cd picstagram`
-
-- Install dependencies using `npm install` or `yarn instal`l
-
-- Run the development environment by `npm start` or `yarn start`
-
-- Open the app on browser `http://localhost:3000`
+Run following commands in terminal:
+1. `git clone git@github.com:meghna-saxena/picstagram.git`
+2. `cd picstagram`
+3. Install dependencies using `npm install` or `yarn install`
+4. Run the development environment by `npm start` or `yarn start`
+5. Open the app on browser `http://localhost:3000`
 
 ## Overview
 
