@@ -4,15 +4,15 @@ A simple picture gallery app resembling instagram minimalist-design built using 
 
 ## Running the development server
 
-> git clone `git@github.com:meghna-saxena/picstagram.git`
+- git clone `git@github.com:meghna-saxena/picstagram.git`
 
-> `cd picstagram`
+- `cd picstagram`
 
-> Install dependencies using `npm install` or `yarn instal`l
+- Install dependencies using `npm install` or `yarn instal`l
 
-> Run the development environment by `npm start` or `yarn start`
+- Run the development environment by `npm start` or `yarn start`
 
-> Open the app on browser `http://localhost:3000`
+- Open the app on browser `http://localhost:3000`
 
 ## Overview
 
